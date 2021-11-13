@@ -1,7 +1,9 @@
+/**
+ * Result String class. Comparable to see which string to store.
+ */
 public class ResultString implements Comparable<ResultString>{
 
     static String TAB = "\t";
-
     String word;
     int x;
     int y;

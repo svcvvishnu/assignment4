@@ -46,6 +46,12 @@ public class Boggle {
         return true;
     }
 
+    /**
+     * Get Puzzle Grid
+     * @param stream Stream tor ead from
+     * @return True if grid created.
+     * @throws RuntimeException Exception if there are any failures.
+     */
     public boolean getPuzzle(BufferedReader stream) throws RuntimeException {
         if (stream == null) throw new RuntimeException("Invalid Stream");
 
@@ -74,6 +80,10 @@ public class Boggle {
         return true;
     }
 
+    /**
+     * Solve tehe puzzle for given dict and puzzle.
+     * @return List of sorted strings.
+     */
     public List<String> solve() {
         if (dict.getRoot().getChildren().size() == 0 || grid == null) throw new RuntimeException("Get Dictionary or puzzle before solving");
         Algorithm a = new Algorithm();
@@ -87,6 +97,10 @@ public class Boggle {
         return output;
     }
 
+    /**
+     * Return printable String of found words.
+     * @return String representation
+     */
     public String print() {
         StringBuilder sb = new StringBuilder();
         if (solution == null) {

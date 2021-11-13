@@ -2,6 +2,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Node Class to store the dictionary nodes
+ */
 public class Node {
     private final Map<Character, Node> children;
     private String content;

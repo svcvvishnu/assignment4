@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * Main Algorithm Class.
+ */
 public class Algorithm {
     //String separator to construct the key.
     private static final String SEPARATOR = ":";
